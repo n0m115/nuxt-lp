@@ -1,0 +1,729 @@
+@font-face {
+    font-family: museo_sans;
+    src: url(../fonts/museosans_100-webfont.eot);
+    src: url(../fonts/museosans_100-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/museosans_100-webfont.woff2) format('woff2'), url(../fonts/museosans_100-webfont.woff) format('woff'), url(../fonts/museosans_100-webfont.ttf) format('truetype'), url(../fonts/museosans_100-webfont.svg#museo_sans100) format('svg');
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: museo_sans;
+    src: url(../fonts/museosans_300-webfont.eot);
+    src: url(../fonts/museosans_300-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/museosans_300-webfont.woff2) format('woff2'), url(../fonts/museosans_300-webfont.woff) format('woff'), url(../fonts/museosans_300-webfont.ttf) format('truetype'), url(../fonts/museosans_300-webfont.svg#museo_sans300) format('svg');
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: museo_sans;
+    src: url(../fonts/museosans_500-webfont.eot);
+    src: url(../fonts/museosans_500-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/museosans_500-webfont.woff2) format('woff2'), url(../fonts/museosans_500-webfont.woff) format('woff'), url(../fonts/museosans_500-webfont.ttf) format('truetype'), url(../fonts/museosans_500-webfont.svg#museo_sans500) format('svg');
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: museo_sans;
+    src: url(../fonts/museosans_700-webfont.eot);
+    src: url(../fonts/museosans_700-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/museosans_700-webfont.woff2) format('woff2'), url(../fonts/museosans_700-webfont.woff) format('woff'), url(../fonts/museosans_700-webfont.ttf) format('truetype'), url(../fonts/museosans_700-webfont.svg#museo_sans700) format('svg');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: museo_sans;
+    src: url(../fonts/museosans_900-webfont.eot);
+    src: url(../fonts/museosans_900-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/museosans_900-webfont.woff2) format('woff2'), url(../fonts/museosans_900-webfont.woff) format('woff'), url(../fonts/museosans_900-webfont.ttf) format('truetype'), url(../fonts/museosans_900-webfont.svg#museo_sans900) format('svg');
+    font-weight: 900;
+    font-style: normal
+}
+
+html,
+body,
+main,
+.slideshow,
+.preview {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.home {
+    overflow: hidden;
+}
+
+main {
+    overflow: hidden;
+}
+
+body {
+    font-family: museo_sans, Arial, sans-serif;
+    color: #fff;
+    background: #fff;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+.summer-saving {
+    width: 155px;
+    position: fixed;
+    left: 30px;
+    top: 35px;
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
+.slide-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+
+.slideshow .swiper-slide.two {
+    padding-bottom: 15px;
+}
+
+.hotel-offer {
+    background: url(../img/stickybg@2x.png) no-repeat;
+    height: 282px;
+    width: 322px;
+    text-align: center;
+    background-size: cover;
+    position: fixed;
+    right: 0;
+    top: 10px;
+}
+
+.hotel-offer .inner-content {
+    width: 151px;
+    position: absolute;
+    right: 40px;
+    top: 65px;
+}
+
+.hotel-offer h3 {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #25e7f8;
+    margin-bottom: 5px;
+}
+
+.hotel-offer img {
+    width: 130px;
+    margin-bottom: 11px;
+    display: block;
+}
+
+.hotel-offer a {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #089ec8;
+    position: relative;
+    text-decoration: none;
+}
+
+.hotel-offer a::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #089ec8;
+    position: absolute;
+    bottom: 0;
+}
+
+.slide-description h2 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.slide-description p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.slide-description p:last-child {
+    margin-bottom: 36px;
+}
+
+.slidenav-btn {
+    padding: 20px 33px;
+    border-radius: 35px;
+    color: #fff;
+    width: 200px;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.71px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+.slidenav-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.swiper-slide.one .slidenav-btn {
+    background-color: #0ccaff;
+}
+
+.swiper-slide.two .slidenav-btn {
+    background-color: #785309;
+}
+
+.swiper-slide.three .slidenav-btn {
+    background-color: #f75154;
+}
+
+.app-store-links {
+    padding-top: 25px;
+    margin-bottom: 30px;
+}
+
+.app-store-links p {
+    font-size: 18px;
+    font-weight: 500 !important;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.app-store-links-inner img {
+    margin-right: 15px;
+}
+
+#main_veil {
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    transform-origin: bottom;
+}
+
+.has_transition_1500_inout_quint {
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.645, .045, .355, 1), opacity 1s cubic-bezier(.645, .045, .355, 1);
+    transition: transform 1s cubic-bezier(.645, .045, .355, 1), opacity 1s cubic-bezier(.645, .045, .355, 1);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.no_width {
+    transform: scale(1, 0);
+}
+
+[data-aos="customAnimation"] {
+    opacity: 0;
+    transform: rotate(10deg);
+    transition-property: opacity, margin-left, transform;
+}
+
+[data-aos="customAnimation"].aos-animate {
+    opacity: 1;
+    margin-left: 0;
+    transform: rotate(0deg);
+}
+
+.preview {
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 55px;
+}
+
+.preview-header {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.preview .detail-logo {
+    width: 195px;
+}
+
+.preview-header .nav {
+    margin-left: 40px;
+}
+
+.preview-header .nav li {
+    margin-left: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.preview-header .nav li a {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.preview-header .nav li.active a {
+    font-weight: 700;
+}
+
+.preview-header .nav li.active::before {
+    content: '';
+    height: 16px;
+    width: 16px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.preview-content .showing-offer {
+    margin-bottom: 20px;
+}
+
+.preview-content .showing-offer,
+.preview-content .dropdown-toggle {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2.3;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.preview-content .dropdown-toggle::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+}
+
+.preview-content .dropdown-toggle::after {
+    border-top: 0.7em solid;
+    border-right: .4em solid transparent;
+    border-left: .4em solid transparent;
+    position: absolute;
+    top: 18px;
+    right: -25px;
+}
+
+.preview-content {
+    position: relative;
+}
+
+.preview-desc p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.preview-desc {
+    padding-bottom: 25px;
+}
+
+.preview-content .preview-footer a {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.94;
+    color: #ffffff;
+}
+
+.preview-content p {
+    margin: 0;
+}
+
+.city-dropdown {
+    z-index: 999;
+}
+
+.main-slide {
+    overflow: hidden;
+    background: #fff;
+    width: 314px;
+    height: 467px;
+    border-radius: 9px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.main-slide .hero {
+    width: 100%;
+    height: 165px;
+}
+
+.main-slide .hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-slide .content-wrapper {
+    padding: 14px 0 16px 12px;
+}
+
+.swiper-container-outer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 33px;
+    width: 33px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.swiper-container-outer .swiper-button-prev {
+    left: 25px;
+}
+
+.swiper-container-outer .swiper-button-next {
+    right: 28px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+}
+
+.slideshow .swiper-button-prev,
+.slideshow .swiper-button-next {
+    height: 47px;
+    width: 47px;
+}
+
+.slideshow .swiper-button-prev::after,
+.slideshow .swiper-button-next::after {
+    font-size: 16px;
+}
+
+.swiper-container-outer .swiper-slide {
+    opacity: .4;
+}
+
+.swiper-container-outer .swiper-container {
+    overflow: visible;
+}
+
+.swiper-container-outer .swiper-slide-visible {
+    opacity: 1;
+}
+
+.main-slide .top-content {
+    margin-bottom: 10px;
+}
+
+.main-slide .hotel-name {
+    font-size: 16px;
+    font-weight: 300;
+    color: #242424;
+    margin-bottom: 5px
+}
+
+.main-slide .location {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 300;
+    color: #a8a8a8;
+}
+
+.inner-swiper {
+    width: 64%;
+    margin: 0;
+}
+
+.inner-swiper .arrows-wrap {
+    padding: 10px 0;
+    margin-left: 0;
+    transform: translate(25%, 0);
+}
+
+.inner-swiper .swiper-pagination2 {
+    padding: 0 12px;
+}
+
+.inner-swiper .swiper-pagination-bullet {
+    height: 9px;
+    width: 9px;
+    margin-right: 8px;
+    background: transparent;
+    border: solid 1px #979797;
+    opacity: 0.3;
+}
+
+.inner-swiper .swiper-pagination-bullet-active {
+    background: #0ccaff;
+    border-color: #0ccaff;
+    opacity: 1;
+}
+
+.inner-swiper .swiper-pagination-bullet:last-of-type {
+    margin: 0;
+}
+
+.inner-swiper .arrow-btn {
+    height: 30px;
+}
+
+.inner-swiper .arrow-btn img {
+    width: 11px;
+}
+
+.inner-swiper .swiper-button-prev2.arrow-btn {
+    transform: rotate(180deg);
+}
+
+.inner-swiper .arrow-btn svg {
+    height: 10px;
+    width: 11px;
+}
+
+.inner-swiper .swiper-slide {
+    opacity: 0.2;
+    border-radius: 8px;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.13);
+    background-color: #ffffff;
+    padding: 12px 6px;
+}
+
+.inner-swiper .swiper-slide p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #242424;
+    margin-bottom: 8px;
+}
+
+.inner-swiper .bk {
+    position: relative;
+    background: #ffc342;
+    display: inline-block;
+    padding-left: 6px;
+    line-height: 27px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: -6px;
+    height: 27px;
+}
+
+.inner-swiper .bk::after {
+    margin-top: 0.5em;
+    content: "";
+    border: 14px solid #ffc342;
+    border-right-color: #ffc342;
+    float: left;
+    position: relative;
+    z-index: 0;
+    margin: 0;
+}
+
+.inner-swiper .bk::after {
+    position: relative;
+    top: 0;
+    left: 14px;
+    float: right;
+    border-right-color: transparent;
+}
+
+.inner-swiper .limited-time {
+    font-size: 12px;
+    font-weight: 500;
+    flex: 0 0 40%;
+    padding-left: 20px;
+    line-height: 15px;
+}
+
+.inner-swiper .swiper-slide.swiper-slide-active {
+    background-image: linear-gradient(122deg, #00a6b6 5%, #0cffc8 98%);
+    opacity: 1;
+}
+
+.inner-swiper .swiper-slide.swiper-slide-active p {
+    color: #fff;
+}
+
+.inner-swiper-slide {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.btm-content {
+    margin-left: -12px;
+    padding: 0 15px;
+    justify-content: center
+}
+
+.btm-content a:first-child {
+    margin-right: 13px;
+}
+
+.btm-content a {
+    border-radius: 19px;
+    font-size: 16px;
+    padding: 0 10px;
+    height: 38px;
+    font-weight: 500;
+    border: 2px solid #0ccaff;
+    text-decoration: none
+}
+
+.btm-content a.swiper-btn-primary {
+    background-color: #0ccaff;
+    color: #fff
+}
+
+a.swiper-btn-secondary {
+    color: #0ccaff;
+}
+
+a.swiper-btn-secondary .icon {
+    margin-right: 6px;
+    height: 30px
+}
+
+.food-fest .main-slide {
+    background: #222222;
+    height: 368px;
+}
+
+.preview .footer {
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.food-fest .main-slide .hotel-name,
+.food-fest .main-slide .location {
+    color: #fff;
+}
+
+.food-fest .menu-type {
+    padding: 6px 10px;
+    border-radius: 2px;
+    background-color: #2b2b2b;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.food-fest .menu-price {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 0.84;
+    color: #cb8906;
+}
+
+.food-fest .menu-price .savings {
+    opacity: 0.3;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.48;
+    color: #ffffff;
+    text-decoration: line-through;
+    display: block;
+}
+
+.food-fest .btm-content {
+    padding-top: 25px;
+}
+
+.food-fest .btm-content a.swiper-btn-primary {
+    background: #cb8906;
+    border: none;
+}
+
+.food-fest .btm-content a.swiper-btn-secondary {
+    border: none;
+    color: #cb8906;
+}
+
+.food-fest .btm-content a:first-child {
+    margin-right: 0;
+}
+
+.cheers .main-slide {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: #181717;
+}
+
+.cheers .main-slide .hotel-name,
+.cheers .main-slide .location {
+    color: #fff;
+}
+
+.cheers .btm-content a.swiper-btn-primary {
+    background: #f75154;
+    border-color: #f75154;
+}
+
+.cheers .inner-swiper .swiper-slide {
+    background: #f75154;
+}
+
+.cheers .inner-swiper .swiper-slide p {
+    color: #fff;
+}
+
+.cheers .inner-swiper .swiper-slide.swiper-slide-active {
+    background: #f75154;
+}
+
+.cheers .inner-swiper .bk {
+    background: #8d2222;
+}
+
+.cheers .inner-swiper .bk::after {
+    border-color: #8d2222;
+    border-right-color: #f75154;
+}
+
+.cheers .inner-swiper .arrow-btn svg path {
+    fill: #f75154;
+}
+
+.cheers .inner-swiper .swiper-pagination-bullet-active {
+    background: #f75154;
+    border-color: #f75154;
+}
+
+@media screen and (min-width: 1200px) {
+    .main-slider-wrap {
+        max-width: 1100px;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .main-slider-wrap {
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+    .inner-swiper {
+        width: 68%;
+        margin: 0;
+    }
+}
